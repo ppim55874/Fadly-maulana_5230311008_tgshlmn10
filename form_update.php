@@ -8,18 +8,32 @@ if (isset($_GET['id'])) {
 }
 ?>
 
-<h2>Update Data Mahasiswa</h2>
-<form action="proses_update.php" method="post">
-    <input type="hidden" name="id_mahasiswa" value="<?= $data['id_mahasiswa'] ?>">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Data Mahasiswa</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Hubungkan CSS -->
+</head>
+<body>
 
-    <label>Nama Mahasiswa</label><br>
-    <input type="text" name="nama_mahasiswa" value="<?= $data['nama_mahasiswa'] ?>" required><br><br>
+<div class="update-form-container">
+    <h2>Update Data Mahasiswa</h2>
+    <form action="proses_update.php" method="post">
+        <input type="hidden" name="id_mahasiswa" value="<?= $data['id_mahasiswa'] ?>">
 
-    <label>Jurusan</label><br>
-    <input type="text" name="prodi_mahasiswa" value="<?= $data['prodi_mahasiswa'] ?>" required><br><br>
+        <label>Nama Mahasiswa</label>
+        <input type="text" name="nama_mahasiswa" value="<?= $data['nama_mahasiswa'] ?>" required>
 
-    <label>Semester</label><br>
-    <input type="number" name="semester_mahasiswa" value="<?= $data['semester_mahasiswa'] ?>" required><br><br>
+        <label>Jurusan</label>
+        <input type="text" name="prodi_mahasiswa" value="<?= $data['prodi_mahasiswa'] ?>" required>
 
-    <input type="submit" value="Update Data">
-</form>
+        <label>Semester</label>
+        <input type="number" name="semester_mahasiswa" value="<?= $data['semester_mahasiswa'] ?>" required>
+
+        <input type="submit" value="Update Data">
+    </form>
+</div>
+
+</body>
+</html>
