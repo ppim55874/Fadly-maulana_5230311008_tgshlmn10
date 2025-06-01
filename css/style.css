@@ -107,3 +107,54 @@ a:hover {
     text-decoration: underline;
     color: #1d6fa5;
 }
+.update-form-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* gradien lembut */
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.update-form-container h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+.update-form-container label {
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+    color: #2c3e50;
+}
+
+.update-form-container input[type="text"],
+.update-form-container input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 15px;
+    background-color: #ffffff;
+}
+
+.update-form-container input[type="submit"] {
+    width: 100%;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 8px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.update-form-container input[type="submit"]:hover {
+    background-color: #1f8a4d;
+}
